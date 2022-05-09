@@ -1,0 +1,3 @@
+docker image build . -t custom-caddy:2.5.1-alpine
+
+docker run -d -p 80:80 -v caddy-config:/config -v caddy_data:/data -d custom-caddy:2.5.1-alpine
